@@ -5,8 +5,50 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:VoiceFun"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="VoiceFun" Height="450" Width="600" WindowStartupLocation="CenterScreen">
     <Grid>
-        
+        <TextBox Name="inputText"
+                 Margin="10"
+                 Height="300"
+                 Width="550"
+                 FontSize="25"
+                 FontFamily="Georgia"
+                 HorizontalAlignment="Center"
+                 VerticalAlignment="Top"
+                 VerticalScrollBarVisibility="Auto"
+                 TextWrapping="Wrap">            
+        </TextBox>
+        <Button Content="Text - Speech"
+                Click="btn_Talk_Clicked"
+                Margin="10"
+                FontSize="25"
+                FontFamily="Arial"
+                HorizontalAlignment="Left"
+                Height="50"
+                Width="170"
+                VerticalAlignment="Bottom">
+        </Button>
+        <Button Content="Start - Speak"
+                Name="startSpeak"
+                Click="btn_StartSpeak_Clicked"
+                Margin="10"
+                FontSize="25"
+                FontFamily="Arial"
+                HorizontalAlignment="Center"
+                Height="50"
+                Width="160"
+                VerticalAlignment="Bottom">
+        </Button>
+        <Button Content="Stop-Speak"
+                Name="stopSpeak"
+                Click="btn_StopSpeak_Clicked"
+                Margin="10"
+                FontSize="25"
+                FontFamily="Arial"
+                HorizontalAlignment="Right"
+                Height="50"
+                Width="160"
+                VerticalAlignment="Bottom">
+        </Button>
     </Grid>
 </Window>
